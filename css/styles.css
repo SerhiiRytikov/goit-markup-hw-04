@@ -394,6 +394,7 @@ address .item:not(:first-child) {
     margin-right: auto;
     background-image: url(./images/header.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     outline: 2px solid tomato;
 }
