@@ -384,3 +384,14 @@ address .item:not(:first-child) {
     font-size: 16px;
     line-height: 1.88;
 }
+
+/* Підкладка */
+
+.Overley {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(./images/header.jpg);
+    outline: 2px solid tomato;
+}
