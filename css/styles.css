@@ -137,7 +137,6 @@ p, h1, h2, h3, h4, h5, h6 {
     padding: 200px 0;
 }
 
-.hero,
 .footer {
     background-color: #2F303A;
 }
@@ -392,7 +391,7 @@ address .item:not(:first-child) {
     height: 600px;
     margin-left: auto;
     margin-right: auto;
-    background-image: url(./images/header.jpg);
+    background-image: url(../images/header.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
