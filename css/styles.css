@@ -121,13 +121,22 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .contacts .icon {
     margin-right: 10px;
+    fill: var(--primery-text-color);
+}
+
+.contacts .link:hover .icon,
+.contacts .link:focus .icon {
+    fill: var(--accent-color);
+}
+
+.contacts .link:hover,
+.contacts .link:focus {
+    color: var(--accent-color);
 }
 
 .site-nav .link:hover,
 .site-nav .link:focus,
 .site-nav .link.current,
-.contacts .link:hover,
-.contacts .link:focus,
 .footer-link .map:hover,
 .footer-link .map:focus,
 .footer-link .contacts:hover,
@@ -151,7 +160,7 @@ p, h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    outline: 2px solid tomato;
+    /* outline: 2px solid tomato; */
 }
 
 .footer,
@@ -306,11 +315,84 @@ p, h1, h2, h3, h4, h5, h6 {
     line-height: 1.19;
     /* identical to box height (ідентична висоті ящика) */
     text-align: center;
+    margin-bottom: 16px;
+}
+
+.team-list .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 32px;
+}
+
+.team-list .items {
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+}
+
+.team-list .icon {
+    width: 20px;
+    height: 20px;
+    fill: #AFB1B8;
+}
+
+.team-list .items:hover .icon,
+.team-list .items:focus .icon {
+    fill: #FFFFFF;
+}
+
+.team-list .items:hover,
+.team-list .items:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
+
+/* Постійні клієнти */
+
+.customers {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    
+    color: var(--title-text-color);
+}
+
+.customers-list  {
+    display: flex;
+    justify-content: space-between;
+    height: 92px;
+}
+
+.customers-list .item {
+    width: 170px;
+    padding: 16px 32px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+
+.customers-list .icon {
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+}
+
+.customers-list .item:hover .icon,
+.customers-list .item:focus .icon {
+    fill: var(--accent-color);
+}
+
+.customers-list .item:hover,
+.customers-list .item:focus {
+    border: 1px solid var(--accent-color);
 }
 
 /* Підвал сайту */
 
-.footer {
+.footer .container {
+    display: flex;
     padding: 60px 0;
 }
 
@@ -322,9 +404,10 @@ p, h1, h2, h3, h4, h5, h6 {
     color: #FFFFFF;
 }
 
-.adress {
+.address {
     margin-top: 20px;
     font-style: normal;
+    margin-right: 70px;
 }
 
 /* .site-nav .item:not(:last-child) {
@@ -347,6 +430,48 @@ address .item:not(:first-child) {
     color: rgba(255, 255, 255, 0.6);
 }
 
+/* Підвал сайту Соціальні мережі */
+
+.footer .links {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.social-link {
+    width: 206px;
+    padding-top: 12px;
+}
+
+.social-link .link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.social-link .items {
+    height: 44px;
+    width: 44px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+.social-link .items:hover,
+.social-link .items:focus {
+    background-color: var(--accent-color);
+    }
+
+.social-link .icon {
+        width: 20px;
+        height: 20px;
+        fill: #FFFFFF;
+}
+
 /* Портфоліо */
 /* Кнопки фільтрації*/
 
@@ -356,7 +481,7 @@ address .item:not(:first-child) {
     margin-bottom: 50px;
 }
 
-.filter .item + .item {
+.filter .item+.item {
     margin-left: 8px;
 }
 
@@ -383,6 +508,10 @@ address .item:not(:first-child) {
 }
 
 /* Картки */
+
+.card:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
 
 .portfolio-list {
     display: flex;
@@ -415,5 +544,3 @@ address .item:not(:first-child) {
     font-size: 16px;
     line-height: 1.88;
 }
-
-/* Підкладка */
